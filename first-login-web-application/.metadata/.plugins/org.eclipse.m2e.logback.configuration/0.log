@@ -1,0 +1,47 @@
+2020-03-15 01:56:58,190 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-03-15 02:03:27,294 [Worker-9: Creating project "first-login-web-application"] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.mahima:first-login-web-application:0.0.1-SNAPSHOT @ C:\Users\Mahima\eclipse-workspace\pom.xml.
+2020-03-15 02:03:34,210 [Worker-9: Creating project "first-login-web-application"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /first-login-web-application/src/main/java
+2020-03-15 02:03:34,217 [Worker-9: Creating project "first-login-web-application"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /first-login-web-application/src/main/resources
+2020-03-15 02:03:34,235 [Worker-9: Creating project "first-login-web-application"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /first-login-web-application/src/test/java
+2020-03-15 02:03:34,237 [Worker-9: Creating project "first-login-web-application"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /first-login-web-application/src/test/resources
+2020-03-15 02:03:36,756 [Worker-16: Updating workspace] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration MyApp references non-existing project spring-demo-one.
+org.eclipse.core.runtime.CoreException: Launch configuration MyApp references non-existing project spring-demo-one.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1838) ~[na:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1713) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.10.500.v20190815-1535.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2147) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:378) ~[na:na]
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67) ~[na:na]
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77) ~[na:na]
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77) ~[na:na]
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77) ~[na:na]
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77) ~[na:na]
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77) ~[na:na]
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77) ~[na:na]
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2272) ~[na:na]
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.10.500.v20190815-1535.jar:na]
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295) ~[na:na]
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158) ~[na:na]
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379) ~[na:na]
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502) ~[na:na]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2308) ~[na:na]
+	at org.eclipse.core.internal.events.NotificationManager$NotifyJob.run(NotificationManager.java:44) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.500.v20190620-1426.jar:na]
+2020-03-15 02:03:45,825 [Worker-17: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-03-15 02:03:45,866 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-03-15 02:03:45,870 [Worker-17: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-03-15 02:03:45,884 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-03-15 19:56:24,538 [Worker-4: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-03-15 19:56:24,761 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-03-15 19:56:24,765 [Worker-4: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-03-15 19:56:24,822 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-03-15 19:56:30,195 [Worker-12: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-03-15 19:56:30,210 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-03-15 19:56:30,212 [Worker-12: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-03-15 19:56:30,224 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
