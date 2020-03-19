@@ -7,6 +7,7 @@
 <title>Login Page</title>
 </head>
 <body>
+<p><font color="red">${errorMsg }</font></p>
 <form action="/login.do" method="post">
 Enter your name <input type="text" name="name" />
 <br>
