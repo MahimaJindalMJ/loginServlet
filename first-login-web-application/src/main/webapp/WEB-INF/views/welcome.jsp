@@ -7,12 +7,13 @@
 <title>Login Page</title>
 </head>
 <body>
-<form action="/login.do" method="post">
-Enter your name <input type="text" name="name" />
-<br>
-Enter your password <input type="password" name="pass"/>
-<br>
-<input type="submit" value="login"/>
-</form>
+
+Welcome ${name} <br>
+your password is ${pass } <br>
+
+<%
+java.util.Date date=new java.util.Date();
+%>
+current date is <%=date %> <br>
 </body>
 </html>

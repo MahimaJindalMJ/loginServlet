@@ -11,10 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /*
  * Browser sends Http Request to Web Server
- * 
- * Code in Web Server => Input:HttpRequest, Output: HttpResponse
  * JEE with Servlets
- * 
  * Web Server responds with Http Response
  */
 
@@ -48,9 +45,32 @@ public class LoginServlet extends HttpServlet {
 		out.println("</html>");
 		*/
 		
+		//parameters in the url
+		request.setAttribute("name",request.getParameter("name"));
+		
 		//using jsp file
 		request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
 
+	}
+
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+		
+		
+		String name = request.getParameter("name");
+		String pass = request.getParameter("pass");
+		UserValidationService service =new UserValidationService();
+		if(service.isUserValid(name,pass))
+		{
+			request.setAttribute("name",name);
+			request.setAttribute("pass",pass);
+			request.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(request, response);
+		}
+		else
+		{
+			request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
+
+		}
 	}
 
 }
