@@ -62,12 +62,14 @@ public class LoginServlet extends HttpServlet {
 		UserValidationService service =new UserValidationService();
 		if(service.isUserValid(name,pass))
 		{
+			//if user is valid directs to welcome page
 			request.setAttribute("name",name);
 			request.setAttribute("pass",pass);
 			request.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(request, response);
 		}
 		else
 		{
+			//incase wrong credential user is redirected to login page
 			request.setAttribute("errorMsg", "Invalid Credentials");
 			request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
 
